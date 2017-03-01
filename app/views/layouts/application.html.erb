@@ -12,7 +12,25 @@
   </head>
 
   <body>
-
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <div class="top-bar-title">
+          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon dark" type="button" data-toggle></button>
+          </span>
+          <strong><%= link_to 'Cyanogram', root_path %></strong>
+        </div>
+      </div>
+       <div id="responsive-menu">
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><%= link_to 'New Post', new_post_path %></li>
+            <li><%= link_to 'Login', '#' %></li>
+            <li><%= link_to 'Register', '#' %></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>

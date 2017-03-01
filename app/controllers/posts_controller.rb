@@ -12,6 +12,10 @@ class PostsController < ApplicationController
 		redirect_to posts_path
 	end
 
+	def show
+		@posts = Post.require(:post).show(:image, :caption)
+	end
+
 	private
 
 	def post_params
