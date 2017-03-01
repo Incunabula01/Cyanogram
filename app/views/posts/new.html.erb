@@ -1,0 +1,23 @@
+<form action="post">
+	<div class="row">
+		<div class="columns small-12">
+			<form action="post">
+				<%= simple_form_for @post do |f| %>
+					<label>
+						<%= f.input :image, placeholder: 'Image here' %>
+					</label>
+					<div class="input-group">
+						<span class="input-group-label">
+							Caption here
+						</span>
+						<%= f.input :caption, placeholder: 'Please write a witty caption', wrapper_html: { class: 'input-group-feild'} %>
+						<div class="input-group-button">
+							<%= f.button :submit, wrapper_html: { class: 'button, success' } %>
+						</div>
+					</div>
+					
+				<% end %>
+			</form>
+		</div>
+	</div>
+</form>
