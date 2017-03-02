@@ -1,11 +1,19 @@
 <div class="row">
-	<%= @posts.each do |post| %>
+	<%- @posts.each do |post| %>
 		<div class="columns small-12 medium-4">
 			<div class="card">
-				<%= image_tag post.image.url(:medium) %>
-				<p><%= post.caption %></p>
+				<div class="card-divider">
+
+							Shazbot
+				</div>
+					<div class="image centered">
+						<%= link_to (image_tag post.image.url(:medium), class: 'thumbnail'), post_path(post) %>
+					</div>
+					<div class="card-section">
+						<p><%= post.caption %></p>
+					</div>
+				</div>
 			</div>
-		</div>
 	<% end %>
 </div>
 
