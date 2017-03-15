@@ -9,7 +9,8 @@ function ClickableCommentsLink(){
       $("#comments-paginator-" + postId).html("<a id='more-comments' data-post-id=" + postId + "data-type='html' data-remote='true' href='/posts/" + postId + "/comments>show morecomments</a>");
       Append.open = true;
       Append.comment = true; 
-      Append.link = false;  
+      Append.link = false;
+      console.log(Append);  
     }); 
   });
 }
