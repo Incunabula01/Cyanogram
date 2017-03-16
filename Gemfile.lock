@@ -106,6 +106,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.2)
+    mini_magick (4.6.1)
     mini_portile (0.6.2)
     minitest (5.8.1)
     multi_json (1.11.2)
@@ -222,6 +223,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   kaminari (~> 0.16.3)
+  mini_magick
   paperclip (~> 4.2.1)
   rails (= 4.2.0)
   rspec-rails (~> 3.3.0)
@@ -235,4 +237,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.6
+   1.12.5
